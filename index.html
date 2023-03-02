@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie's Portfolio</title>
+    <!-- Google Font -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+    rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbcd514b1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-----------------navbar------------------>
+<div class="navbar"></div>
+
+<!-----------------header------------------>
+    <div id="header">
+        <div class="container">
+            <a href="#header"><img src="images/gg_GG_dot.svg" class="logo"></a>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>hi im <span class="name-txt">annie</span></h1>
+            </div>
+        </div>
+    </div>
+
+<!-----------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/gio9.png" class="self-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="paragraph">
+                        I'm a software engineering student at McMaster University. 
+                        I have great interest in full-stack development, artificial intelligence, 
+                        human-computer interactions, and everything in between.    
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Java, C, HTML, CSS, Haskell, SQL, GDScript, ARM Assembly</li>
+                            <li><span>Tools and Libraries</span><br>LaTeX, Markdown, VS Code, Eclipse, GitHub, Microsoft & Google Suites, Photoshop</li>
+                            <li><span>Core Skills</span><br>Leadership, Teamwork, Flexibility, Creativity, Attention to Detail, Time Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>McCarthy's Uniforms</span><br>Sales Associate & Cashier</li>
+                            <li><span>Self Employment</span><br>Freelance Artist</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>McMaster University</span><br>Bachelor of Applied Science (Co-Op)</li>
+                            <li><span>Holy Trinity CSS</span><br>High School Diploma (<a href="https://gg.ca/en/honours/recipients/116-110131">Governor General's Medal</a> recipient)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>Creative</span><br>Digital art, Pencil drawings, Painting, Playing piano</li>
+                            <li><span>Academic</span><br>Learning Korean, Coding personal projects, Reading</li>
+                            <li><span>Misc</span><br>Cooking, Playing games, Listening to music, Watching shows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------services------------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="website">
+                <i class="fa-solid fa-code"></i>
+                <h2>Portfolio Website</h2>
+                <p>My personal portfolio website. The results of this project are what you happen to be reading right now :)</p>
+                <a href="https://github.com/giovannager/Personal-Portfolio-Website">Learn more</a>
+            </div>
+            <div class="remindchuu">
+                <i class="fa-brands fa-discord"></i>
+                <h2>RemindChuu Discord Bot</h2>
+                <p>A discord bot enabling users to set, view, delete, and clear personal or server-wide reminders. 
+                    The bot reminds users by pinging them at any set time with any set reminder. </p>
+                <a href="https://github.com/giovannager/RemindChuu">Learn more</a>
+            </div>
+            <div class="blanc">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Blanc Puzzle Video Game</h2>
+                <p>A nonogram puzzle video game which won the first place jury prize for KuriusHacks' 2021 Christmas Edition Game Jam.</p>
+                <a href="https://github.com/madelahn/blanc">Learn more</a>&emsp;
+                <a href="https://madelahn.itch.io/blanc" class="play-game">Play the game</a>
+            </div>
+            <div class="runnergame">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Endless Runner Video Game</h2>
+                <p>An endless runner video game which was created in January 2020 as a final project for my grade 11 computer science course.</p>
+                <a href="https://github.com/giovannager/Endless-Runner-Game">Learn more</a>
+            </div>
+        </div>
+        <!--<a href="https://github.com/giovannager" class="btn"><i class="fa-brands fa-github"></i> GitHub</a-->
+    </div>
+</div>
+<!-----------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <form target="_blank" action="https://formsubmit.co/giovannagerada@gmail.com" method="POST">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> giovannagerada@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/giovannager"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/giovanna-gerada/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Giovanna_Gerada_Resume_January_2023.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--Copyright tag at bottom-->
+    <div class="copyright">
+        <p>Copyright © Giovanna Gerada.</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName){
+            for(i of tablinks){
+                i.classList.remove("active-link");
+            }
+            for(i of tabcontents){
+                i.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
