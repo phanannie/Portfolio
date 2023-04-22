@@ -22,64 +22,72 @@ body{
 .container{
     padding: 20px 10%;
 }
-.navbar{
-    background: #334556;
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    height: 80px;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+  
+nav {
     position: fixed;
-    z-index: 1;
+    bottom: 10%;
+    right: 2%;
+    width: 100%;
+    padding: 10px;
+  }
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 15px;
-    right: 190px;
-    z-index: 2;
-}
-.logo{
-    width: 120px;
-    position: fixed;
-    top: -20px;
-    transition: transform 0.5s;
-    z-index: 2;
-}
-.logo:hover{
-    transform: scale(1.05);
-}
+  
+
 nav ul li{
-    display: inline-block;
+    display: block;
     list-style: none;
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #64ffda
+    color: #64ffda; 
     text-decoration: none;
-    font-size: 24px;
+    font-size: 15px;
     font-style: bold;
     position: relative;
 }
 nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
-    background: #64ffda;
+    height: 2px;
+    background: #ccd6f6;
     position: absolute;
     left: 0;
     bottom: -6px;
     border-radius: 20px;
     transition: 0.5s;
 }
+
+nav ul li a:hover {
+    color: #ccd6f6;
+}
+
 nav ul li a:hover::after{
+    background-color: #64ffda; 
     width: 100%;
 }
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
 }
 .header-text h1{
+    color: #ccd6f6;
     font-size: 60px;
     margin-top: 20px;
 }
@@ -100,7 +108,7 @@ nav ul li a:hover::after{
     font-size: 40px;
     font-weight: 600;
     margin-top: 30px;
-    color: #ccd6f6ca
+    color: #ccd6f6
     ;
 }
   
@@ -117,6 +125,55 @@ nav ul li a:hover::after{
   
 
 
+
+/*Everthing pertaining STUFFFFFFF*/
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.experience-col-1 {
+    flex-basis: 25%;
+}
+.experience-col-2{
+    flex-basis: 75%;
+    margin-top: 120px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+.tab-titles{
+    margin: 40px 0 60px;
+}
+.tab-links{
+    margin: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: bold;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #64ffda;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 30%;
+}
+.tab-links:hover::after{
+    width: 35%;
+}
 .tab-contents ul li{
     list-style: none;
     margin: 20px 0;
@@ -127,7 +184,7 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 .tab-contents ul li a{
-    color: #ccd6f6;
+    color: #64ffda;
 }
 .tab-contents{
     display: none;
@@ -135,20 +192,15 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-
-
-
-/*Everthing pertaining STUFFFFFFF*/
-
-#Experience{
-    padding: 30px 10%;
+.sub-title-2{
+    color: #ccd6f6;
 }
-
-#Education{
-    padding: 30px 10%;
+.experience-bold{
+    color: #64ffda;
 }
-#Hobbies{
-    padding: 30px 10%;
+.experience-list {
+    font-size: 12px;
+    list-style-type: disc;
 }
 
 

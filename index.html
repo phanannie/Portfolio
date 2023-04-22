@@ -28,9 +28,7 @@
                 <ul id="sidemenu">
                     <li><a href="#header">/home</a></li>
                     <li><a href="#about">/about</a></li>
-                    <li><a href="#Experience">/Experience</a></li>
-                    <li><a href="#Education">/Education</a></li>
-                    <li><a href="#Hobbies">/Hobbies</a></li>
+                    <li><a href="#experience">/experience</a></li>
                     <li><a href="#projects">/projects</a></li>
                     <li><a href="#contact">/contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
@@ -38,7 +36,7 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>hi, <span class="name-txt">annie</span> here.</h1>
+                <h1>hi, i'm <span class="name-txt">annie</span></h1>
             </div>
         </div>
     </div>
@@ -48,7 +46,7 @@
         <div class="container">
             <h1 class="sub-title">/about me</h1>
             <p class="paragraph">
-                I'm a <strong class="about-bold-1">Software Engineering</strong> student at 
+                I'm a <strong class="about-bold-1">Computer Engineering</strong> student at 
                 <strong class="about-bold-2">McMaster University</strong>. 
                 I have great interest in full-stack development, artificial intelligence, 
                 human-computer interactions, and everything in between.    
@@ -60,39 +58,76 @@
                     
 <!-----------------experience------------------>
     
-    <div id="Experience">
-        <h2 class="sub-title">/experience</h2>
-        <ul>
-            <li><span>McCarthy's Uniforms</span><br>Sales Associate & Cashier</li>
-            <li><span>Self Employment</span><br>Freelance Artist</li>
-        </ul>
+<div id="experience">
+    <div class="container"> 
+        <div class="row">
+            <div class="experience-col-1">
+                <h2 class="sub-title">/experience</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('McMaster')">McMaster</p>
+                        <p class="tab-links" onclick="opentab('Kumon')">Kumon</p>
+                        <p class="tab-links" onclick="opentab('MSYO')">MSYO</p>
+                    </div>
+            </div>
+
+            <div class="experience-col-2" >
+                <div class="tab-contents active-tab" id= "McMaster">
+                    <h2 class="sub-title-2">
+                        Undergraduate Research Assistant @ <span class="experience-bold">David Braley Health Science Centre, McMaster University</span>
+                    </h2>
+                    <h3>Apr 2022 - Aug 2022</h3>
+                    <ul class="experience-list">
+                        <li>Collaborated with the research team of 5+ members for chart reviews, data extraction, quantitative data analyses 
+                            and prepared data finding summaries under the supervision of Dr. Dee Mangin for the Ontario COVID@Home
+                            Monitoring Program</li>
+                        <li>Analyzed and maintained data through software programs NVivo, SPSS, Microsoft Office and REDCap</li>
+                        <li>Synthesized research knowledge and developed plain-language research summaries for research projects following
+                            methodologies</li>
+                        <li>Conducted interviews and focus groups then coded and cleaned qualitative linguistic data used to improve
+                            McMaster’s Pilot Research Project</li> 
+                    </ul>
+            
+                </div>
+                <div class= "tab-contents" id= "Kumon"> 
+                    <h2 class="sub-title-2">
+                        Teaching Assistant @ <span class="experience-bold">Kumon Canada</span>
+                    </h2>
+                    <h3>Sept 2018 - Apr 2023</h3>
+                        <ul class="experience-list">
+                            <li>Collaborated with the head instructor to generate reports and lesson plans through Kumon database software and
+                                Excel for 60+ students</li>
+                            <li>Utilized Kumon grade book platform to service 30+ students daily for tutoring</li>
+                            <li>Troubleshoot upkeep of database and maintain classroom equipment, and student worksheets</li>
+                        </ul>
+                    </li>
+                </div>
+            
+                <div class= "tab-contents" id= "MSYO"> 
+                    <h2 class="sub-title-2">
+                        Administrative Assistant @ <span class="experience-bold">Mississauga Symphony Youth Orchestra </span>
+                    </h2>
+                    <h3>May 2019 - July 2019</h3>
+                        <ul class="experience-list">
+                            <li>Analyzed financial earnings, summary reports, and recaps to attain data based on merchandise products</li>
+                            <li>Presented recommendations for feedback in processes to senior management which increased customer service
+                                efficiency by 10% and customer satisfaction</li>
+                            <li>Presented recommendations for feedback in processes to senior management which increased customer service
+                                efficiency by 10% and customer satisfaction</li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-<!-----------------education------------------>
 
-    <div id="Education">
-        <h2 class="sub-title">/Education</h2>
-        <ul>
-            <li><span>McMaster University</span><br>Bachelor of Engineering (Co-Op)</li>
-        </ul>
-    </div>
 
-<!-----------------hobbies------------------>
-
-    <div id="Hobbies">
-        <h2 class="sub-title">/hobbies</h2>
-
-        <ul>
-            <li><span>Creative</span><br>Digital art, Pencil drawings, Painting, Playing piano</li>
-            <li><span>Academic</span><br>Learning Korean, Coding personal projects, Reading</li>
-            <li><span>Misc</span><br>Cooking, Playing games, Listening to music, Watching shows</li>
-        </ul>
-    </div>
 
 <!-----------------services------------------>
 <div id="projects">
     <div class="container">
-        <h2 class="sub-title">/ my projects</h2>
+        <h2 class="sub-title">/projects</h2>
         <div class="projects-list">
             <div class="website">
                 <i class="fa-solid fa-code"></i>
