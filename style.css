@@ -267,14 +267,14 @@ nav ul li a:hover::after{
     background-repeat: no-repeat;
     background-position: right;
 }
-.remindchuu{
+.weatherapp{
     background-color: #0f2546;
     background-image: url('images/remindchuu3.png');
     background-size:contain;
     background-repeat: no-repeat;
     background-position: right;
 }
-.blanc{
+.mathgame{
     background-color: #0f2546;
     background-image: url('images/blanc.png');
     background-size: contain;
