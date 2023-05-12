@@ -36,12 +36,11 @@ body{
     color: #ccd6f692;
 }
 
-/*Everything pertaining to the HEADER and top of the website*/
+/*HEADER SECTION*/
 
 .container{
     padding: 20px 10%;
 }
-
 .navbar {
     position: fixed;
     bottom: 0;
@@ -50,24 +49,20 @@ body{
     text-align: center;
     padding: 10px 0;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
-}
-  
+} 
 nav {
     position: fixed;
     bottom: 10%;
     right: 3%;
     width: 100%;
     padding: 10px;
-  }
-  
+}
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: right;
 }
-  
-
 nav ul li{
     display: block;
     list-style: none;
@@ -91,16 +86,13 @@ nav ul li a::after{
     border-radius: 20px;
     transition: 0.5s;
 }
-
 nav ul li a:hover {
     color: #ccd6f6;
 }
-
 nav ul li a:hover::after{
     background-color: #64ffda; 
     width: 100%;
 }
-
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -116,14 +108,12 @@ nav ul li a:hover::after{
 }
 .nav ul li.social-links {
     margin-top: 50%;
-  }
+}
 
-/*Everything pertaining to the ABOUT section*/
+/*ABOUT*/
 #about{
     color: #ebebeb;
 }
-
-
 .sub-title {
     font-size: 40px;
     font-weight: 600;
@@ -131,24 +121,20 @@ nav ul li a:hover::after{
     color: #ccd6f6
     ;
 }
-  
 .paragraph {
     margin-right: 10%;
     line-height: 180%;
     color: #ccd6f692;
     margin-top: 30px;
     font-size: 20px;
-}
-  
+} 
 .about-bold-1, .about-bold-2 {
     color: #64ffda;
     font-weight: bold;
 }
   
 
-
-
-/*Everthing pertaining STUFFFFFFF*/
+/*EXPERIENCE SECTION*/
 
 .row{
     display: flex;
@@ -223,6 +209,7 @@ nav ul li a:hover::after{
 }
 .experience-date{
     margin-top: 2%;
+    font-size: 16px;
 }
 .experience-list{
     margin-top: 3%;
@@ -238,11 +225,11 @@ nav ul li a:hover::after{
 }
 
 
-/*Everything pertaining to the PROJECTS section*/
+/*PROJECTS*/
+
 #projects{
     padding: 30px 0;
     margin-right: 10%;
-
 }
 .projects-list{
     display: grid;
@@ -259,6 +246,9 @@ nav ul li a:hover::after{
 }
 .projects-list div p{
     margin-right: 40%;
+}
+.prj-icon{
+    color: #64ffda;
 }
 .website{
     background-color: #0f2546;
@@ -281,7 +271,7 @@ nav ul li a:hover::after{
     background-repeat: no-repeat;
     background-position: right;
 }
-.runnergame{
+.engproj{
     background-color: #0f2546;
     background-image: url('images/runner.png');
     background-size: contain;
@@ -323,14 +313,14 @@ nav ul li a:hover::after{
     background: #0a192f;
 }
 
+/*CONTACT SECTION*/
 
-
-/*Everything pertaining to the CONTACT section*/
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 25%;
 }
 .contact-right{
     flex-basis: 60%;
+    margin-right: 11.5%;
 }
 .contact-left p{
     margin-top: 30px;
@@ -348,12 +338,11 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #64ffda;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #f5af54;
     transform: translateY(-5px);
 }
 .btn.btn2{
@@ -369,10 +358,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #64ffda;
+    background: #ccd6f6;
     padding: 15px;
     margin: 15px 0;
-    color: #ccd6f6;
+    color: #0f2546;
     font-size: 18px;
     border-radius: 6px;
 }
