@@ -299,10 +299,6 @@ a:link{
     color: #64ffda;
     transform: scale(0.8);
 }
-.prj-link{
-    margin-left: 360px;
-    transform: scale(0.6);
-}
 .website{
     background-color: #0f2546;
     background-size: contain;
@@ -361,15 +357,12 @@ a:link{
     background: #64ffda;
 }
 
-/*CONTACT SECTION*/
-
+/*Everything pertaining to the CONTACT section*/
 .contact-left{
-    flex-basis: 25%;
+    flex-basis: 35%;
 }
 .contact-right{
     flex-basis: 60%;
-    margin-right: 11.5%;
-    margin-top: 6%;
 }
 .contact-left p{
     margin-top: 30px;
@@ -387,16 +380,17 @@ a:link{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #64ffda;
+    color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
+    color: #64ffda;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #0a192f;
+    background: #0f2546;
     font-size: 20px;
 }
 .contact-right form{
@@ -410,7 +404,7 @@ form input, form textarea{
     background: #ccd6f6;
     padding: 15px;
     margin: 15px 0;
-    color: #0f2546;
+    color: black;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -424,7 +418,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #0a192f;
+    background: #0f2546;
 }
 
 
