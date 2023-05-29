@@ -357,12 +357,13 @@ a:link{
     background: #64ffda;
 }
 
-/*Everything pertaining to the CONTACT section*/
+/*CONTACT SECTION*/
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 25%;
 }
 .contact-right{
     flex-basis: 60%;
+    margin-right: 11%;
 }
 .contact-left p{
     margin-top: 30px;
