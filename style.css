@@ -114,12 +114,34 @@ nav ul li a:hover::after{
 #about{
     color: #ebebeb;
 }
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.about-col-1{
+    flex-basis: 70%;
+}
+.about-col-2 img{
+    width: 70%;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    background-color: #0f2546;
+    margin-left: -6%;
+    margin-top: 20%;
+}
+.about-col-2 img:hover{
+    transform: translateY(-10px);
+}
+.about-col-2{
+    flex-basis: 30%;
+}
 .sub-title {
     font-size: 40px;
     font-weight: 600;
     margin-top: 30px;
-    color: #ccd6f6
-    ;
+    color: #ccd6f6;
 }
 .paragraph {
     margin-right: 10%;
@@ -128,9 +150,32 @@ nav ul li a:hover::after{
     margin-top: 30px;
     font-size: 20px;
 } 
-.about-bold-1, .about-bold-2 {
+.about-bold-1, .about-bold-2{
     color: #64ffda;
     font-weight: bold;
+}
+a:link{ 
+    text-decoration: none; 
+}
+.about-bold-1:hover{
+    color: #ccd6f6;
+} 
+.about-bold-2:hover{
+    color: #ccd6f6;
+}
+.about-list{
+    margin-top: 3%;
+    color: #ccd6f692;
+    margin-left: 5%;
+}
+.about-list ul li{
+    line-height: 170%;
+    margin-left: 25px;
+    font-size: 17px;
+    list-style-type: disc;
+}
+.about-list ul li::marker{
+    color: #64ffda;
 }
   
 
@@ -147,7 +192,7 @@ nav ul li a:hover::after{
 }
 .experience-col-2{
     flex-basis: 68%;
-    margin-top: 120px;
+    margin-top: 10%;
     margin-right: 12%;
     margin-bottom: 20px;
     margin-left: 0;
@@ -252,9 +297,10 @@ nav ul li a:hover::after{
 }
 .prj-icon{
     color: #64ffda;
+    transform: scale(0.8);
 }
 .prj-link{
-    margin-left: 50%;
+    margin-left: 360px;
     transform: scale(0.6);
 }
 .website{
@@ -287,7 +333,6 @@ nav ul li a:hover::after{
 }
 .projects-list div h2{
     font-size: 40px;
-    font-width: 500;
     margin-bottom: 15px;
 }
 .projects-list div a{
@@ -313,7 +358,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #0a192f;
+    background: #64ffda;
 }
 
 /*CONTACT SECTION*/
@@ -324,6 +369,7 @@ nav ul li a:hover::after{
 .contact-right{
     flex-basis: 60%;
     margin-right: 11.5%;
+    margin-top: 6%;
 }
 .contact-left p{
     margin-top: 30px;
