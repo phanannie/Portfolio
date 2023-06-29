@@ -161,11 +161,27 @@ a:link{
 .about-bold-2:hover{
     color: #ccd6f6;
 }
-.about-list{
+.about-list {
+    display: flex;
     margin-top: 3%;
     color: #ccd6f692;
     margin-left: 5%;
 }
+
+.about-list-col-1,
+.about-list-col-2 {
+    flex-basis: 50%;
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+    line-height: 170%;
+    font-size: 17px;
+}
+
+.about-list-col-2 {
+    margin-right: 400px;
+}
+
 .about-list ul li{
     line-height: 170%;
     margin-left: 25px;
@@ -277,7 +293,7 @@ a:link{
 }
 .projects-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -291,8 +307,13 @@ a:link{
 .projects-list div p{
     margin-right: 40%;
     width: 100%;
-    font-size: 17px;
+    font-size: 15px;
 }
+.projects-list div h2.sub-title-2 {
+    font-size: 20px;
+  }
+  
+
 .prj-icon{
     color: #64ffda;
     transform: scale(0.8);
@@ -317,10 +338,16 @@ a:link{
     background-repeat: no-repeat;
     background-position: right;
 }
-
+.digitart {
+    background-image: linear-gradient(-90deg, rgba(0, 0, 0, .5), #0f2546 60%),
+    url('images/virtualpainter.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
 .engproj{
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, .4), #0f2546 60%),
-    url('images/sterilzationsystem.png');
+    url('images/sterilizationsys.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
